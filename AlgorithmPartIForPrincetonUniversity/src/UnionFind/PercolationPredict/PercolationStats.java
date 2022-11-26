@@ -5,6 +5,9 @@ import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 import edu.princeton.cs.algs4.StdIn;
 
+/**
+ * 通过仿真模拟计算渗透概率。作业链接：https://coursera.cs.princeton.edu/algs4/assignments/percolation/specification.php
+ */
 public class PercolationStats {
     private double[] ptArray;
     private Percolation percolation;
