@@ -17,14 +17,14 @@ public class QueueByArrayV1 {
     }
 
     public void push(String item) {
-        if (tail == s.length) resize(2 * s.length);
+        if (tail == s.length) resize(2 * (tail - head));
         s[tail++] = item;
     }
 
     public String pop() {
         String item = s[head];
         s[head++]   = null;
-        if ((tail - head) == s.length / 4) resize(s.length / 2);
+        if ((tail - head) > 0 && (tail - head) == s.length / 4) resize(s.length / 2);
 
         return item;
     }
