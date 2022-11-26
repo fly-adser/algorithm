@@ -1,5 +1,8 @@
 package UnionFind.UnionV2;
 
+/**
+ * 连通集合合并方式：通过树回溯的方式分别找到两个节点所在集合的根节点，将其中一个节点的根节点的父节点设定为另外一个根节点。平均时间复杂度为logN，最坏情况下为N
+ */
 public class QuickFindUF {
     public int[] id;
 

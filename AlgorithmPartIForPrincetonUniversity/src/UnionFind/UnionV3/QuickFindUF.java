@@ -1,5 +1,8 @@
 package UnionFind.UnionV3;
 
+/**
+ * 1.在树回溯的过程中，不断降低树的高度；2.将小的连通集合挂载到大的连通集合下。
+ */
 public class QuickFindUF {
     public int[] id;
     public int[] size;
