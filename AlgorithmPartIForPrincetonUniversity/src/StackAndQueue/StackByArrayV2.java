@@ -41,7 +41,7 @@ public class StackByArrayV2<T> implements Iterable<T>{
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new ArrayIterator();
     }
 
     private class ArrayIterator implements Iterator<T> {

@@ -1,4 +1,4 @@
-package UnionFind.PercolationPredict;
+package UnionFind.HomeWork;
 
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;

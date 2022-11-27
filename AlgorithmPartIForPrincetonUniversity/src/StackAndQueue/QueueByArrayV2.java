@@ -37,12 +37,14 @@ public class QueueByArrayV2<T> implements Iterable<T>{
             copy[i-head] = s[i];
         }
 
-        s = copy;
+        s    = copy;
+        tail = tail - head;
+        head = 0;
     }
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new ArrayIterator();
     }
 
     private class ArrayIterator implements Iterator<T> {
