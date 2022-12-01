@@ -5,8 +5,6 @@ import java.util.NoSuchElementException;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
-import javax.management.ObjectName;
-
 public class RandomizedQueue<Item> implements Iterable<Item> {
     private Item[] s;
     private int size = 0;

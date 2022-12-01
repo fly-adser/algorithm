@@ -5,25 +5,25 @@ import java.util.Iterator;
 /**
  * 1.使用数组实现栈；2.通过泛型让栈支持不同的数据类型；3.通过iterator接口实现迭代器
  */
-public class StackByArrayV2<T> implements Iterable<T>{
-    private T[] s;
+public class StackByArrayV2<Item> implements Iterable<Item>{
+    private Item[] s;
     private int N = 0;
 
     public StackByArrayV2() {
-        s = (T[]) new Object[1];
+        s = (Item[]) new Object[1];
     }
 
     public boolean isEmpty() {
         return N == 0;
     }
 
-    public void push(T item) {
+    public void push(Item item) {
         if (N == s.length) resize(2 * s.length);
         s[N++] = item;
     }
 
-    public T pop() {
-        T item = s[--N];
+    public Item pop() {
+        Item item = s[--N];
         s[N]   = null;
         if (N > 0 && N == s.length / 4) resize(s.length / 2);
 
@@ -31,7 +31,7 @@ public class StackByArrayV2<T> implements Iterable<T>{
     }
 
     public void resize(int capacity) {
-        T[] copy = (T[]) new Object[capacity];
+        Item[] copy = (Item[]) new Object[capacity];
         for (int i = 0; i < N; i++) {
             copy[i] = s[i];
         }
@@ -40,11 +40,11 @@ public class StackByArrayV2<T> implements Iterable<T>{
     }
 
     @Override
-    public Iterator<T> iterator() {
+    public Iterator<Item> iterator() {
         return new ArrayIterator();
     }
 
-    private class ArrayIterator implements Iterator<T> {
+    private class ArrayIterator implements Iterator<Item> {
 
         private int i = N;
 
@@ -54,7 +54,7 @@ public class StackByArrayV2<T> implements Iterable<T>{
         }
 
         @Override
-        public T next() {
+        public Item next() {
             return s[--i];
         }
     }

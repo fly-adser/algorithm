@@ -5,9 +5,9 @@ import java.util.Iterator;
 /**
  * 1.使用List实现队列；2.通过泛型让队列支持不同的数据类型；3.通过iterator接口实现迭代器
  */
-public class QueueByListV2<T> implements Iterable<T>{
+public class QueueByListV2<Item> implements Iterable<Item>{
     private class Node {
-        T item;
+        Item item;
         Node next;
     }
 
@@ -17,7 +17,7 @@ public class QueueByListV2<T> implements Iterable<T>{
         return first == null;
     }
 
-    public void push(T item) {
+    public void push(Item item) {
         Node oldLast = last;
         last         = new Node();
         last.item    = item;
@@ -29,8 +29,8 @@ public class QueueByListV2<T> implements Iterable<T>{
         }
     }
 
-    public T pop() {
-        T item = first.item;
+    public Item pop() {
+        Item item = first.item;
         first  = first.next;
         if (isEmpty()) last = null;
 
@@ -38,11 +38,11 @@ public class QueueByListV2<T> implements Iterable<T>{
     }
 
     @Override
-    public Iterator<T> iterator() {
+    public Iterator<Item> iterator() {
         return new ListIterator();
     }
 
-    private class ListIterator implements Iterator<T> {
+    private class ListIterator implements Iterator<Item> {
 
         private Node current = first;
 
@@ -52,8 +52,8 @@ public class QueueByListV2<T> implements Iterable<T>{
         }
 
         @Override
-        public T next() {
-            T item  = current.item;
+        public Item next() {
+            Item item  = current.item;
             current = current.next;
 
             return item;

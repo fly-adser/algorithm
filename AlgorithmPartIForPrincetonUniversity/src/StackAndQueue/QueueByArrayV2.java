@@ -5,26 +5,26 @@ import java.util.Iterator;
 /**
  * 1.使用数组实现队列；2.通过泛型让队列支持不同的数据类型；3.通过iterator接口实现迭代器
  */
-public class QueueByArrayV2<T> implements Iterable<T>{
-    private T[] s;
+public class QueueByArrayV2<Item> implements Iterable<Item>{
+    private Item[] s;
     private int head = 0;
     private int tail = 0;
 
     public QueueByArrayV2() {
-        s = (T[]) new Object[1];
+        s = (Item[]) new Object[1];
     }
 
     public boolean isEmpty() {
         return head == tail;
     }
 
-    public void push(T item) {
+    public void push(Item item) {
         if (tail == s.length) resize(2 * (tail - head));
         s[tail++] = item;
     }
 
-    public T pop() {
-        T item    = s[head];
+    public Item pop() {
+        Item item    = s[head];
         s[head++] = null;
         if ((tail - head) > 0 && (tail - head) == s.length / 4) resize(s.length / 2);
 
@@ -32,7 +32,7 @@ public class QueueByArrayV2<T> implements Iterable<T>{
     }
 
     public void resize(int capacity) {
-        T[] copy = (T[]) new Object[capacity];
+        Item[] copy = (Item[]) new Object[capacity];
         for (int i = head; i < tail; i++) {
             copy[i-head] = s[i];
         }
@@ -43,11 +43,11 @@ public class QueueByArrayV2<T> implements Iterable<T>{
     }
 
     @Override
-    public Iterator<T> iterator() {
+    public Iterator<Item> iterator() {
         return new ArrayIterator();
     }
 
-    private class ArrayIterator implements Iterator<T> {
+    private class ArrayIterator implements Iterator<Item> {
 
         private int current = head;
 
@@ -57,8 +57,8 @@ public class QueueByArrayV2<T> implements Iterable<T>{
         }
 
         @Override
-        public T next() {
-            T item   = s[current];
+        public Item next() {
+            Item item   = s[current];
             current += 1;
 
             return item;
