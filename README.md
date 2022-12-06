@@ -10,4 +10,9 @@ course link: [Algorithm Part I.Princeton University](https://www.coursera.org/le
 - 栈和队列(StackAndQueue)  
   - 使用数组和列表两种方式，通过泛型实现可兼容任意数据类型的栈和队列   
   - 分别实现双端队列和随机队列  
-  - 学习笔记总结：[[老刘的刷题笔记系列二]：栈和队列](https://zhuanlan.zhihu.com/p/588469212) 
+  - 学习笔记总结：[[老刘的刷题笔记系列二]：栈和队列](https://zhuanlan.zhihu.com/p/588469212)   
+
+- 排序算法(SortAlgorithm) 
+  - 通过选择排序、插入排序、希尔排序、归并排序和快速排序算法对抽象数据类型的数组进行排序  
+  - 编写一个程序，找出给定点集合中的所有直线  
+  - 学习笔记总结：[[老刘的刷题笔记系列三]：排序算法](https://zhuanlan.zhihu.com/p/589593857) 
