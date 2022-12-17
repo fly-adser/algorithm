@@ -15,4 +15,9 @@ course link: [Algorithm Part I.Princeton University](https://www.coursera.org/le
 - 排序算法(SortAlgorithm) 
   - 通过选择排序、插入排序、希尔排序、归并排序和快速排序算法对抽象数据类型的数组进行排序  
   - 编写一个程序，找出给定点集合中的所有直线  
-  - 学习笔记总结：[[老刘的刷题笔记系列三]：排序算法](https://zhuanlan.zhihu.com/p/589593857) 
+  - 学习笔记总结：[[老刘的刷题笔记系列三]：排序算法](https://zhuanlan.zhihu.com/p/589593857)  
+
+- 优先队列(PriorityQueue) 
+  - 实现优先队列和堆排序  
+  - 编写程序，通过A* 搜索算法解决8魔方问题
+  - 学习笔记总结[[老刘的刷题比例系列四]：优先队列](https://zhuanlan.zhihu.com/p/592606000)
