@@ -20,4 +20,4 @@ course link: [Algorithm Part I.Princeton University](https://www.coursera.org/le
 - 优先队列(PriorityQueue) 
   - 实现优先队列和堆排序  
   - 编写程序，通过A* 搜索算法解决8魔方问题
-  - 学习笔记总结[[老刘的刷题比例系列四]：优先队列](https://zhuanlan.zhihu.com/p/592606000)
+  - 学习笔记总结：[[老刘的刷题比例系列四]：优先队列](https://zhuanlan.zhihu.com/p/592606000)
