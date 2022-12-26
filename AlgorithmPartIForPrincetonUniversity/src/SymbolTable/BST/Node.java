@@ -1,4 +1,4 @@
-package SymbolTable;
+package SymbolTable.BST;
 
 public class Node<KEY, VALUE> {
     public KEY key;

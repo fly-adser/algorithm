@@ -1,5 +1,10 @@
-package SymbolTable;
+package SymbolTable.BST;
 
+/**
+ * Binary Search Tree. 二叉搜索树
+ * @param <KEY>
+ * @param <VALUE>
+ */
 public class BST<KEY extends Comparable<KEY>, VALUE> {
     private Node root;
 
@@ -13,6 +18,11 @@ public class BST<KEY extends Comparable<KEY>, VALUE> {
         return x.count;
     }
 
+    /**
+     * search the value of the given key
+     * @param key
+     * @return
+     */
     public VALUE get(KEY key) {
         Node x = root;
         while (x != null) {
@@ -25,12 +35,22 @@ public class BST<KEY extends Comparable<KEY>, VALUE> {
         return null;
     }
 
+    /**
+     * insert a node
+     * @param key
+     * @param value
+     */
     public void put(KEY key, VALUE value) {
         root = put(root, key, value);
     }
 
     private Node put(Node x, KEY key, VALUE value) {
-        if (x == null) return new Node(key, value);
+        if (x == null) {
+            x       = new Node(key, value);
+            x.count = 1;
+            return x;
+        }
+
         int cmp = key.compareTo((KEY) x.key);
         if (cmp < 0) x.left = put(x.left, key, value);
         else if (cmp > 0) x.right = put(x.right, key, value);
@@ -40,6 +60,11 @@ public class BST<KEY extends Comparable<KEY>, VALUE> {
         return x;
     }
 
+    /**
+     * largest key <= a given key
+     * @param key
+     * @return
+     */
     public KEY floor(KEY key) {
         Node x = floor(root, key);
         if (x == null) return null;
@@ -59,6 +84,11 @@ public class BST<KEY extends Comparable<KEY>, VALUE> {
         else return x;
     }
 
+    /**
+     * how many keys < a given key
+     * @param key
+     * @return
+     */
     public int rank(KEY key) {
         return rank(key, root);
     }
@@ -72,6 +102,9 @@ public class BST<KEY extends Comparable<KEY>, VALUE> {
         else return size(x.left);
     }
 
+    /**
+     * delete the smallest key
+     */
     public void deleteMin() {
         root = deleteMin(root);
     }
@@ -84,6 +117,10 @@ public class BST<KEY extends Comparable<KEY>, VALUE> {
         return x;
     }
 
+    /**
+     * delete the given key
+     * @param key
+     */
     public void delete(KEY key) {
         root = delete(root, key);
     }
@@ -107,4 +144,6 @@ public class BST<KEY extends Comparable<KEY>, VALUE> {
         x.count = 1 + size(x.left) + size(x.right);
         return x;
     }
+
+
 }
