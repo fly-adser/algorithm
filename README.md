@@ -1,5 +1,5 @@
 ## Basic Data Structure  
-<p align="center">
+<center>
 
 | data structure | learning note                                                |
 |:--------------:|--------------------------------------------------------------|
@@ -12,4 +12,4 @@
 |      红黑树       | [[老刘的刷题笔记系列八]：红黑树](https://zhuanlan.zhihu.com/p/595703513)   |  
 |     Trie树      | [[老刘的刷题笔记系列九]：Trie树](https://zhuanlan.zhihu.com/p/595716046)                                                         |
 
-</p>
+</center>
