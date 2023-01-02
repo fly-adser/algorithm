@@ -1,8 +1,6 @@
 <component name="libraryTable">
   <library name="PercolationPredict">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/AlgorithmPartIForPrincetonUniversity/out/production/algorithm/UnionFind/PercolationPredict.zip!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>

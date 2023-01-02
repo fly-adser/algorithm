@@ -10,6 +10,6 @@
 |      二叉树       | [[老刘的刷题笔记系列五]：二叉树](https://zhuanlan.zhihu.com/p/594539131)   |
 |     平衡二叉树      | [[老刘的刷题笔记系列七]：平衡二叉树](https://zhuanlan.zhihu.com/p/594802379) |
 |      红黑树       | [[老刘的刷题笔记系列八]：红黑树](https://zhuanlan.zhihu.com/p/595703513)   |  
-|     Trie树      | [[老刘的刷题笔记系列九]：Trie树](https://zhuanlan.zhihu.com/p/595716046)                                                         |
-
+|     Trie树      | [[老刘的刷题笔记系列九]：Trie树](https://zhuanlan.zhihu.com/p/595716046) |
+|      kd树       | [[老刘的刷题笔记系列十]：kd树(KNN算法实现)](https://zhuanlan.zhihu.com/p/596079050)                                                         |
 </center>
