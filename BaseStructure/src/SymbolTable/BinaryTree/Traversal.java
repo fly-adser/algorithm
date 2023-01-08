@@ -134,4 +134,110 @@ public class Traversal {
             if (currNode.right != null) queue.add(currNode.right);
         }
     }
+
+    /**
+     * mirror 前序遍历
+     * @param root
+     */
+    public void mirrorPreOrder(TreeNode root) {
+        if (root==null) return;
+        TreeNode curr = root, proc = null;
+
+        while (curr != null) {
+            if (curr.left == null) {
+                System.out.print(curr.data + " ");
+                curr = curr.right;
+            } else {
+                proc = curr.left;
+                while (proc.right!=null && proc.right!=curr) proc = proc.right;
+                if (proc.right==curr) {
+                    proc.right = null;
+                    curr       = curr.right;
+                } else {
+                    System.out.print(curr.data + " ");
+                    proc.right = curr;
+                    curr       = curr.left;
+                }
+            }
+        }
+    }
+
+    /**
+     * mirror 中序遍历
+     * @param root
+     */
+    public void mirrorInOrder(TreeNode root) {
+        if (root==null) return;
+        TreeNode curr = root, proc = null;
+
+        while (curr != null) {
+            if (curr.left == null) {
+                System.out.print(curr.data + " ");
+                curr = curr.right;
+            } else {
+                proc = curr.left;
+                while (proc.right!=null && proc.right!=curr) proc = proc.right;
+                if (proc.right==curr) {
+                    System.out.print(curr.data + " ");
+                    proc.right = null;
+                    curr       = curr.right;
+                } else {
+                    proc.right = curr;
+                    curr       = curr.left;
+                }
+            }
+        }
+    }
+
+    /**
+     * mirror 后序遍历
+     * @param root
+     */
+    public void mirrorPostOrder(TreeNode root) {
+        if (root==null) return;
+        TreeNode curr = root, proc = null;
+
+        while (curr != null) {
+            if (curr.left == null) {
+                curr = curr.right;
+            } else {
+                proc = curr.left;
+                while (proc.right != null && proc.right != curr) proc = proc.right;
+                if (proc.right == curr) {
+                    proc.right = null;
+                    mirrorsPrint(curr.left);
+                    curr       = curr.right;
+                } else {
+                    proc.right = curr;
+                    curr       = curr.left;
+                }
+            }
+        }
+
+        mirrorsPrint(root);
+    }
+
+    public void mirrorsPrint(TreeNode root) {
+        TreeNode head = reverseList(root);
+        TreeNode curr = head;
+        while (curr != null) {
+            System.out.print(curr.data + " ");
+            curr = curr.right;
+        }
+
+        reverseList(head);
+    }
+
+    public TreeNode reverseList(TreeNode root) {
+        if (root==null || root.right==null) return root;
+        TreeNode pre = null, cur = root, nxt = cur.right;
+        while (cur != null) {
+            cur.right = pre;
+            pre       = cur;
+            cur       = nxt;
+            if (cur != null) nxt = cur.right;
+        }
+
+        return pre;
+    }
 }

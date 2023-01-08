@@ -43,5 +43,17 @@ public class client {
         System.out.println("--------迭代层次遍历--------");
         traversal.iteraLevelOrder(root);
         System.out.println("--------------------------");
+
+        System.out.println("--------Mirror前序遍历--------");
+        traversal.mirrorPreOrder(root);
+        System.out.println("--------------------------");
+
+        System.out.println("--------Mirror中序遍历--------");
+        traversal.mirrorInOrder(root);
+        System.out.println("--------------------------");
+
+        System.out.println("--------Mirror后序遍历--------");
+        traversal.mirrorPostOrder(root);
+        System.out.println("--------------------------");
     }
 }
