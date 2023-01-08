@@ -32,7 +32,7 @@
 | [14.填充每个节点的下一个右侧节点指针I](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/)     | 二叉树、队列、递归     |  
 | [15.填充每个节点的下一个右侧节点指针II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/) | 二叉树、层次遍历      |  
 | [16.复制带随机指针的链表](https://leetcode.cn/problems/copy-list-with-random-pointer/)                          | 双指针、虚拟节点      | 
-| [17.环形链表II](https://leetcode.cn/problems/linked-list-cycle/)                                          | 双指针           |  
+| [17.环形链表I](https://leetcode.cn/problems/linked-list-cycle/)                                           | 双指针           |  
 | [18.环形链表II](https://leetcode.cn/problems/linked-list-cycle-ii/)                                       | 双指针           |  
 | [19.重排链表](https://leetcode.cn/problems/reorder-list/)                                                 | 双指针、翻转        |  
 | [20.LRU缓存](https://leetcode.cn/problems/lru-cache/)                                                   | 双向链表、哈希表、虚拟节点 |  
