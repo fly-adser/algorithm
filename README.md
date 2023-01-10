@@ -38,12 +38,16 @@
 | [20.LRU缓存](https://leetcode.cn/problems/lru-cache/)                                                   | 双向链表、哈希表、虚拟节点 |  
 
 ### 二叉树
-| question                                                                      | tags     |    
-|:------------------------------------------------------------------------------|:---------|
-| [1.二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/)    | 遍历       |  
-| [2.二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/)     | 遍历       |
-| [3.二叉树的后序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/)   | 遍历       |
-| [4.二叉树的层次遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | 遍历       |
-| [5.二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)      | 后序遍历、分治法 |
-| [6.二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/)             | 后序遍历、分治法 |  
-| [7.翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)                   | 后序遍历     |
+| question                                                                                                       | tags     |    
+|:---------------------------------------------------------------------------------------------------------------|:---------|
+| [1.二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/)                                     | 遍历       |  
+| [2.二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/)                                      | 遍历       |
+| [3.二叉树的后序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/)                                    | 遍历       |
+| [4.二叉树的层次遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/)                                  | 遍历       |
+| [5.二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)                                       | 后序遍历、分治法 |
+| [6.二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/)                                              | 后序遍历、分治法 |  
+| [7.翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)                                                    | 后序遍历     |  
+| [8.最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/)                                                   | 二叉树构建    |  
+| [9.从前序和中序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)   | 二叉树构建    |
+| [9.从中序和后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)  | 二叉树构建    |
+| [10.从前序和后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | 二叉树构建    |
