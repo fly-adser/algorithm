@@ -44,4 +44,6 @@
 | [2.二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/)     | 遍历       |
 | [3.二叉树的后序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/)   | 遍历       |
 | [4.二叉树的层次遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | 遍历       |
-| [5.二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)                                                                | 后序遍历、分治法 |
+| [5.二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)      | 后序遍历、分治法 |
+| [6.二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/)             | 后序遍历、分治法 |  
+| [7.翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)                   | 后序遍历     |
