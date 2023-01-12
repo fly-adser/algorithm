@@ -54,4 +54,10 @@
 | [11.二叉树的序列化和反序列化](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/)                          | 序列化      | 
 | [12.寻找重复的子树](https://leetcode.cn/problems/find-duplicate-subtrees/)                                             | 序列化、后序遍历 | 
 | [13.二叉树中第k小元素](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/)                                     | 中序遍历     |  
-| [14.把二叉搜索树转化为累加树](https://leetcode.cn/problems/convert-bst-to-greater-tree/)                                    | 中序遍历翻转   |
+| [14.把二叉搜索树转化为累加树](https://leetcode.cn/problems/convert-bst-to-greater-tree/)                                    | 中序遍历翻转   |  
+| [15.验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/)                                         | 二叉搜索树    |  
+| [16.二叉搜索树中的搜索](https://leetcode.cn/problems/search-in-a-binary-search-tree/)                                    | 二叉搜索树    |  
+| [17.二叉搜索树中的插入](https://leetcode.cn/problems/insert-into-a-binary-search-tree/)                                  | 二叉搜索树    |  
+| [18.二叉搜索中的删除](https://leetcode.cn/problems/delete-node-in-a-bst/)                                               | 二叉搜索树    | 
+| [19.不同的二叉搜索树I](https://leetcode.cn/problems/unique-binary-search-trees/)                                        | 二叉搜索树    |  
+| [20.不同的二叉搜索树II](https://leetcode.cn/problems/unique-binary-search-trees-ii/)                                    | 二叉搜索树    |

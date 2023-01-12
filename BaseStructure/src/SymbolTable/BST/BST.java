@@ -139,6 +139,7 @@ public class BST<KEY extends Comparable<KEY>, VALUE> {
             while (min.left != null) min = min.left;
             min.right = deleteMin(t.right);
             min.left  = t.left;
+            x         = min;
         }
 
         x.count = 1 + size(x.left) + size(x.right);
