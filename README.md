@@ -60,4 +60,9 @@
 | [17.二叉搜索树中的插入](https://leetcode.cn/problems/insert-into-a-binary-search-tree/)                                  | 二叉搜索树    |  
 | [18.二叉搜索中的删除](https://leetcode.cn/problems/delete-node-in-a-bst/)                                               | 二叉搜索树    | 
 | [19.不同的二叉搜索树I](https://leetcode.cn/problems/unique-binary-search-trees/)                                        | 二叉搜索树    |  
-| [20.不同的二叉搜索树II](https://leetcode.cn/problems/unique-binary-search-trees-ii/)                                    | 二叉搜索树    |
+| [20.不同的二叉搜索树II](https://leetcode.cn/problems/unique-binary-search-trees-ii/)                                    | 二叉搜索树    |  
+| [21.二叉树的最近公共祖先I](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/)                         | 公共祖先     |  
+| [22.二叉树的最近公共祖先II](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree-ii/)                     | 公共祖先     |  
+| [23.二叉树的公共祖先III](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree-iii/)                     | 公共祖先     |  
+| [24.二叉树的公共祖先IV](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree-iv/)                       | 公共祖先     |  
+| [25.二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/)                 | 公共祖先     |
